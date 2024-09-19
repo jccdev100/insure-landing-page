@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: hsl(256, 26%, 20%); /* Dark Violet */
+  color: hsl(216, 30%, 68%); /* Grayish Blue */
+  color: hsl(270, 9%, 17%); /* Very Dark Violet */
+  color: hsl(273, 4%, 51%); /* Dark Grayish Violet */
+  color: hsl(0, 0%, 98%); /* Very Light Gray */
+  color: initial;
+}
+body {
+  font-size: 15px;
+  font-family: "Karla";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.primary-nav {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.hamburger-button-wrapper {
+  display: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-wrapper {
+  background-color: hsl(256, 26%, 20%);
+  height: 520px;
+  /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.hero {
+  max-width: 1140px;
+  margin: auto;
+  padding: 88px 15px 50px;
+  /* padding-bottom: 50px; */
+  display: flex;
+}
+
+.hero-content {
+  padding-right: 30px;
+}
+.bar {
+  width: 130px;
+  height: 1px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  margin-top: 45px;
+  line-height: 55px;
+}
+
+.hero-content p {
+  color: white;
+  line-height: 23px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.hero .cta-button-wrapper {
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-image {
+  height: 550px;
+}
+
+main,
+footer {
+  max-width: 1140px;
+  margin: auto;
+  padding: 85px 15px;
+}
+
+section.about-us {
+  padding-top: 80px;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+.bg-gray {
+  background-color: darkgray;
+}
+
+.about-us h2 {
+  font-size: 55px;
+  margin-top: 40px;
+}
+
+.core-values-wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+}
+
+.core-value {
+  width: 33.33%;
+}
+
+.core-value h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.core-value p {
+  line-height: 22px;
+}
+
+section.cta {
+  background-color: hsl(256, 26%, 20%);
+  padding: 70px 85px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta h2 {
+  font-size: 45px;
+  color: white;
+  width: 50%;
+  line-height: 1;
+}
+
+.logo-and-socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(0, 3%, 82%);
+  margin-block: 25px;
+}
+
+.secondary-navigations-wrapper {
+  display: flex;
+  gap: 10px;
+  /* align-items: start; */
+}
+
+.secondary-navigation {
+  width: 25%;
+  text-transform: uppercase;
+  /* background-color: aquamarine; */
+}
+
+.secondary-navigation h2 {
+  font-size: 14px;
+  line-height: 1;
+  color: hsl(273, 4%, 51%);
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+.secondary-navigation ul {
+  margin-top: 25px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.secondary-navigation a {
+  text-decoration: none;
+  color: hsl(270, 9%, 17%);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 680px) {
+  body {
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger-button-wrapper {
+    display: block;
+  }
+
+  .hamburger-button-wrapper button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .hero-wrapper {
+    height: auto;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .hero-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 90px 30px;
+  }
+
+  .hero-content p {
+    width: auto;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+}
